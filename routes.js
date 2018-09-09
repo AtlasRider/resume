@@ -1,13 +1,12 @@
 import { createBottomTabNavigator } from 'react-navigation';
-import HomeScreen from './screens/HomeScreen'
+import AboutScreen from './screens/AboutScreen'
 import SkillScreen from './screens/SkillScreen'
 import ExperienceScreen from './screens/ExperienceScreen'
-import OtherScreen from './screens/HomeScreen'
+import OtherScreen from './screens/OtherScreen'
 
 export default createBottomTabNavigator({
-  About: HomeScreen,
+  About: AboutScreen,
   Skills: SkillScreen,
   Experience: ExperienceScreen,
   Other: OtherScreen
-
 });

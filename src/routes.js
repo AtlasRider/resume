@@ -7,15 +7,15 @@ import OtherScreen from './screens/OtherScreen';
 // import colors from './styles';
 
 export default createBottomTabNavigator({
-  About: AboutScreen,
-  Skills: SkillScreen,
-  Experience: ExperienceScreen,
-  Education: EducationScreen,
-  Other: OtherScreen,
+    About: AboutScreen,
+    Skills: SkillScreen,
+    Experience: ExperienceScreen,
+    Education: EducationScreen,
+    Other: OtherScreen,
 }, {
-  tabBarOptions: {
-    style: {
-      backgroundColor: 'grey',
+    tabBarOptions: {
+        style: {
+            backgroundColor: 'grey',
+        },
     },
-  },
 });

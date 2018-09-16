@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class HomeScreen extends React.Component {
+export default class EducationScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -20,4 +20,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-

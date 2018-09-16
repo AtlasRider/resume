@@ -1,10 +1,10 @@
 import React from 'react';
-import RootStack from './routes'
+import RootStack from './src/routes';
 
 export default class App extends React.Component {
   render() {
     return (
-        <RootStack />
+      <RootStack />
     );
   }
 }

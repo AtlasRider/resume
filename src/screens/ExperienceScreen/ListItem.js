@@ -11,8 +11,7 @@ export default class HomeScreen extends React.Component {
             ? moment(this.props.data.end)
             : moment();
 
-        let duration = end.diff(start);
-        return `${this.format(start)} - ${this.format(end)} (${duration})`;
+        return `${this.format(start)} - ${this.format(end)}`;
     }
 
     format(date) {

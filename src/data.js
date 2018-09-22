@@ -10,8 +10,8 @@ export default {
         company: 'Cvent',
         companyLogo: require('../assets/img/logo_cvent.png'),
         location: 'Portland, Oregon',
-        start: 1501545600,  // August 2017
-        end: null,          // Now
+        start: '2017-08-01',  // August 2017
+        end: null,            // Now
         description: [
             'Transitioned to team\'s Tech Lead to help guide technicle discussions and decisions',
             'Led pilot project to inject React Native into existing app',
@@ -22,8 +22,8 @@ export default {
         company: 'DAT Solutions',
         companyLogo: require('../assets/img/logo_dat.png'),
         location: 'Beaverton, Oregon',
-        start: 1459468800,  // April 2016
-        end: 1501545600,    // August 2017
+        start: '2016-04-01',  // April 2016
+        end: '2017-08-01',    // August 2017
         description: [
             'Created DAT Load Board for Truckers Android app to replace existing web app (“the Uber for Truckers”)',
             'Led feature development from project beginning to the initial launch',

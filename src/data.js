@@ -13,7 +13,7 @@ export default {
         start: '2017-08-01',  // August 2017
         end: null,            // Now
         description: [
-            'Transitioned to team\'s Tech Lead to help guide technicle discussions and decisions',
+            'Transitioned to team\'s Tech Lead to help guide technical discussions and decisions',
             'Led pilot project to inject React Native into existing app',
             'Implemented new features on existing Android app',
         ]

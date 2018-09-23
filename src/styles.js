@@ -9,9 +9,9 @@ const globalStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: colors.background,
         paddingTop: 50,
-        paddingBottom: 20,
-        paddingRight: 20,
-        paddingLeft: 20,
+        paddingBottom: 15,
+        paddingRight: 15,
+        paddingLeft: 15,
     },
 });
 

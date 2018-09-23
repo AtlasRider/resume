@@ -15,7 +15,11 @@ export default createBottomTabNavigator({
 }, {
     tabBarOptions: {
         style: {
-            backgroundColor: 'grey',
+            backgroundColor: 'grey'
         },
+        labelStyle : {
+            color: 'black'
+        }
     },
+    initialRouteName: 'Experience'
 });

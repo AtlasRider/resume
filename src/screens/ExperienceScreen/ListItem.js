@@ -27,7 +27,23 @@ const styles = StyleSheet.create({
   }    
 });
 
+class ToggleView extends React.Component {
+  static propTypes = {
+    hideDescriptions: PropTypes.bool.isRequired,
+  }
+
+  render() {
+    return this.props.hideDescriptions 
+    ? (<View>{this.props.hideDescriptions}</View>)
+    : (<View>{this.props.hideDescriptions}{this.props.children}</View>);
+  }
+}
+
 export default class HomeScreen extends React.Component {  
+  static propTypes = {
+    hideDescriptions: PropTypes.bool.isRequired,
+    data: PropTypes.object.isRequired
+  }
 
   getDates() {
     let start = moment(this.props.data.start);
@@ -57,16 +73,16 @@ export default class HomeScreen extends React.Component {
           </View>
           <Image source={this.props.data.companyLogo} style={styles.logo} />
         </View>
-        <FlatList
-          data={this.props.data.description}
-          keyExtractor={item => item}
-          renderItem={({item}) => <BulletPoint data={item} />}
-        />
+        <ToggleView
+          hideDescriptions={this.props.hideDescriptions}>
+          <FlatList
+            data={this.props.data.description}
+            keyExtractor={item => item}
+            renderItem={({item}) => 
+              <BulletPoint data={item} />}
+          />
+        </ToggleView>
       </View>
     );
   }
 }
-
-HomeScreen.propTypes = {
-  data: PropTypes.object.isRequired
-};

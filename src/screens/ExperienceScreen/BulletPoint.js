@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   }
 });
 
+// TODO: Items are getting cutoff mid-word, and not wrapping properly
 export default class BulletPoint extends React.Component {
   render() {
     return (

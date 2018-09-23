@@ -13,6 +13,7 @@ export default createBottomTabNavigator({
   Education: EducationScreen,
   Other: OtherScreen,
 }, {
+  //initialRouteName: 'Experience',
   tabBarOptions: {
     style: {
       backgroundColor: 'grey'
@@ -20,6 +21,5 @@ export default createBottomTabNavigator({
     labelStyle : {
       color: 'black'
     }
-  },
-  initialRouteName: 'Experience'
+  }
 });

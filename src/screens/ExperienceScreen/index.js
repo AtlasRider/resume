@@ -22,16 +22,16 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hideDescriptions: true
+      hideDescriptions: false
     };
   }
 
   render() {
     return (
       <View style={globalStyles.container}>
-        <View style={style.switchContainer}>
+        {/* TODO: Need to get this button to change the state. Works on initial value though. */}
+        {/* <View style={style.switchContainer}>
           <Text style={style.switchLabel}>Hide details</Text>
-          {/* TODO: Need to get this button to change the state. Works on initial value though. */}
           <Switch 
             value={this.state.hideDescriptions} 
             onValueChange={(value) =>
@@ -39,7 +39,7 @@ export default class HomeScreen extends React.Component {
                 hideDescriptions: value
               })        
             } />
-        </View>
+        </View> */}
         <FlatList
           data={data.experience}          
           keyExtractor={item => item.sequence.toString()}

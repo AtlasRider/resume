@@ -8,7 +8,7 @@ export default {
   experience: [{
     title: 'Senior Software Engineer',
     company: 'Cvent',
-    companyLogo: require('../assets/img/logo_cvent.png'),
+    companyLogo: require('../../assets/img/logo_cvent.png'),
     location: 'Portland, Oregon',
     start: '2017-08-01',
     end: null,            // Now
@@ -20,7 +20,7 @@ export default {
   }, {
     title: 'Senior Software Engineer',
     company: 'DAT Solutions',
-    companyLogo: require('../assets/img/logo_dat.png'),
+    companyLogo: require('../../assets/img/logo_dat.png'),
     location: 'Beaverton, Oregon',
     start: '2016-04-01',
     end: '2017-08-01',
@@ -33,7 +33,7 @@ export default {
   }, {
     title: 'Senior Software Engineer',
     company: 'ShiftWise',
-    companyLogo: require('../assets/img/logo_shiftwise.png'),
+    companyLogo: require('../../assets/img/logo_shiftwise.png'),
     location: 'Portland, Oregon',
     start: '2013-08-01',
     end: '2016-04-01',

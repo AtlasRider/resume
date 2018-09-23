@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
 import { globalStyles } from '../../styles';
-import data from '../../data';
+import data from '../../data/resume';
 import ListItem from './ListItem';
 
 export default class HomeScreen extends React.Component {

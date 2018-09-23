@@ -3,7 +3,7 @@ import {
   Text, View, Image
 } from 'react-native';
 import { globalStyles } from '../../styles';
-import data from '../../data';
+import data from '../../data/resume';
 
 const aboutData = data.about;
 

@@ -6,6 +6,7 @@ export default {
     intro: 'Fifteen years software development experience and most recently I\'ve been developing Android apps. Always looking for new opportunities to continue developing mobile apps in new exciting spaces that help connect users and technology in interesting ways.'
   },
   experience: [{
+    sequence: 9,
     title: 'Senior Software Engineer',
     company: 'Cvent',
     companyLogo: require('../../assets/img/logo_cvent.png'),
@@ -18,6 +19,7 @@ export default {
       'Implemented new features on existing Android app',
     ]
   }, {
+    sequence: 8,
     title: 'Senior Software Engineer',
     company: 'DAT Solutions',
     companyLogo: require('../../assets/img/logo_dat.png'),
@@ -31,6 +33,7 @@ export default {
       'Feature development and refactoring of existing DAT Trucker Android app'
     ]
   }, {
+    sequence: 7,
     title: 'Senior Software Engineer',
     company: 'ShiftWise',
     companyLogo: require('../../assets/img/logo_shiftwise.png'),
@@ -44,6 +47,7 @@ export default {
       'Full stack feature development in our core systems app using Angular, C#, and Mongo'
     ]
   }, {
+    sequence: 6,
     title: 'Web Developer',
     company: 'Pop Art',
     companyLogo: require('../../assets/img/logo_popart.png'),
@@ -58,6 +62,7 @@ export default {
       'Used my experience in previous development companies to establish Agile, DRY, Test-Driven and Continuous Integration processes that maximize efficiency and contribute to the overall improvement of the team'
     ]
   }, {
+    sequence: 5,
     title: 'Web Developer',
     company: 'Pepper Hamilton',    
     companyLogo: require('../../assets/img/logo_pepperhamilton.jpg'),
@@ -72,6 +77,7 @@ export default {
       'Maintained and improved databases that surveyed the firm’s experience to facilitate pitches for prospective clients'
     ]
   }, {
+    sequence: 4,
     title: 'Travel',
     location: 'Latin America',
     companyLogo: require('../../assets/img/logo_atlasrider.jpg'),
@@ -88,6 +94,7 @@ export default {
       'I share my expertise at annual adventure travel expos'
     ]
   }, {
+    sequence: 3,
     title: 'Software Developer',
     company: 'University of Phoenix',
     companyLogo: require('../../assets/img/logo_uop.png'),
@@ -104,6 +111,7 @@ export default {
       'Contributed to proper coding standards'
     ]
   }, {
+    sequence: 2,
     title: 'Software Developer',
     company: 'Hands on Technology',
     companyLogo: require('../../assets/img/logo_handsontech.png'),    
@@ -117,6 +125,7 @@ export default {
       'Designed and implemented CRM and CMS tool for internal use',
     ]
   }, {
+    sequence: 1,
     title: 'Software Developer',
     company: 'Ulta',
     companyLogo: require('../../assets/img/logo_ulta.png'),    
@@ -129,6 +138,7 @@ export default {
       'Developed batch processes to transfer data between multiple departments and software systems, the most notable system being SAP'
     ]
   }, {
+    sequence: 0,
     title: 'Software Developer',
     company: 'Remote Operations Company',
     companyLogo: require('../../assets/img/logo_roc.png'),    

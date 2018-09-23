@@ -10,7 +10,7 @@ export default class HomeScreen extends React.Component {
       <View style={globalStyles.container}>
         <FlatList
           data={data.experience}
-          keyExtractor={item => item.company}
+          keyExtractor={item => item.sequence.toString()}
           renderItem={({item}) => <ListItem data={item} />}
         />
       </View>

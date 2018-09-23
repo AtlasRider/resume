@@ -30,12 +30,15 @@ const styles = StyleSheet.create({
 export default class HomeScreen extends React.Component {  
 
   getDates() {
-    let start = this.format(moment(this.props.data.start));
+    let start = moment(this.props.data.start);
     let end = this.props.data.end 
-      ? this.format(moment(this.props.data.end))
-      : 'Now';
+      ? moment(this.props.data.end)
+      : moment();
 
-    return `${start} - ${end}`;
+    let duration = end.diff(start, 'years', true);
+    duration = moment.duration(duration, 'years').humanize();
+
+    return `${this.format(start)} - ${this.format(end)} (${duration})`;
   }
 
   format(date) {

@@ -1,10 +1,22 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row'
+  }
+});
 
 export default class BulletPoint extends React.Component {
   render() {
-    return (<Text>-{this.props.data}</Text>);
+    return (
+      <View style={styles.container}>
+        <Text>-</Text>
+        <Text>{this.props.data}</Text>
+      </View>
+    );
   }
 }
 BulletPoint.propTypes = {

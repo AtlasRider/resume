@@ -13,7 +13,7 @@ export default class BulletPoint extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>-</Text>
+        <Text>- </Text>
         <Text>{this.props.data}</Text>
       </View>
     );

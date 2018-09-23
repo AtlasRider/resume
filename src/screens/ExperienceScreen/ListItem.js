@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, FlatList, Image, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import BulletPoint from './BulletPoint';
 
 const logoDimensions = 65;
 const styles = StyleSheet.create({
@@ -25,18 +26,6 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   }    
 });
-
-
-class BulletPoint extends React.Component {
-
-  render() {
-    return (<Text>-{this.props.data}</Text>);
-  }
-}
-BulletPoint.propTypes = {
-  data: PropTypes.string.isRequired
-};
-
 
 export default class HomeScreen extends React.Component {  
 

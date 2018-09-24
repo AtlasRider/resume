@@ -12,7 +12,7 @@ const globalStyles = StyleSheet.create({
     paddingBottom: 15,
     paddingRight: 15,
     paddingLeft: 15,
-  },
+  }
 });
 
 export { colors, globalStyles };

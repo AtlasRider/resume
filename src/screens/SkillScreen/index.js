@@ -5,13 +5,50 @@ import data from '../../data/skills';
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  category: {
+    fontSize: 20,
+    fontWeight: 'bold'
   },
+  list: {
+    marginLeft: 35
+  },
+  categoryContainer: {
+    flexDirection: 'row',
+    marginTop: 20
+  },
+  skillContainer: {
+    flexDirection: 'row'
+  },
+  icon: {
+    height: 32,
+    width: 32,
+    marginBottom: 5,
+    marginRight: 5
+  },
+  label: {
+    marginTop: 7
+  }
 });
+
+class Skill extends React.Component {
+  static propTypes = {
+    data: PropTypes.object.isRequired
+  }
+
+  render() {
+    return (
+      <View style={styles.skillContainer}>
+        <Image 
+          style={styles.icon}
+          source={this.props.data.icon} 
+        />
+        <Text style={styles.label}>
+          {this.props.data.label}
+        </Text>
+      </View>
+    );
+  }
+}
 
 class Category extends React.Component {
   static propTypes = {
@@ -21,19 +58,25 @@ class Category extends React.Component {
   render() {
     return (
       <View>
-        <Text>{this.props.data.category}</Text>
+        <View style={styles.categoryContainer}>
+          <Image 
+            style={styles.icon}
+            source={this.props.data.icon} 
+          />
+          <Text style={styles.category}>
+            {this.props.data.category}
+          </Text>
+        </View>
         <FlatList
+          style={styles.list}
           data={this.props.data.skills}          
-          keyExtractor={item => item}
-          renderItem={({item}) => 
-            <Text>{item}</Text>
-          }
+          keyExtractor={item => item.label}
+          renderItem={({item}) => <Skill data={item} />}
         />
       </View>
       );
   }
 }
-
 
 export default class HomeScreen extends React.Component {
   render() {

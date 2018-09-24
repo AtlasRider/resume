@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import BulletPoint from './BulletPoint';
 
+
 const logoDimensions = 65;
 const styles = StyleSheet.create({
   container: {

@@ -1,17 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { globalStyles } from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,3 +10,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default class HomeScreen extends React.Component {
+  render() {
+    return (
+      <View style={globalStyles.container}>
+        
+
+        <Image source={require('../../../assets/img/skills.jpg')} />
+      </View>
+    );
+  }
+}

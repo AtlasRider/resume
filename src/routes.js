@@ -4,7 +4,6 @@ import SkillScreen from './screens/SkillScreen';
 import ExperienceScreen from './screens/ExperienceScreen';
 import EducationScreen from './screens/EducationScreen';
 import OtherScreen from './screens/OtherScreen';
-// import colors from './styles';
 
 export default createBottomTabNavigator({
   About: AboutScreen,
@@ -13,7 +12,7 @@ export default createBottomTabNavigator({
   Education: EducationScreen,
   Other: OtherScreen,
 }, {
-  //initialRouteName: 'Experience',
+  initialRouteName: 'Skills',
   tabBarOptions: {
     style: {
       backgroundColor: 'grey'

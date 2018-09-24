@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList, Switch, StyleSheet, Text } from 'react-native';
 import { globalStyles } from '../../styles';
-import data from '../../data/resume';
+import data from '../../data/experience';
 import ListItem from './ListItem';
 
 const style = StyleSheet.create({

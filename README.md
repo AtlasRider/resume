@@ -9,5 +9,8 @@
   - Experience
   - Education
   - Other
+- Export options
+  - PDF  
+  - JSON
 
 
